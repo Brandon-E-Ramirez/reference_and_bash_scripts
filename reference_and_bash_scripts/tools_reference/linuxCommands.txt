@@ -1,0 +1,120 @@
+Getting CLI help [Last updated on: 11/6/2021]: 
+
+"whatis" or "info" command shows a brief description of what is the functionality of specific built-in Linux command: whatis <command>
+"man" Displays a “manual page”. Manual pages are usually very detailed, and it’s recommended that you read the man pages for any command you are unfamiliar with. 
+"man intro" – Displays a brief introduction to Linux commands.
+"man man" – Provides information about the manual itself.
+"<command name> -h" third alternative to get help
+
+#linux commands - web sources: 
+#https://techlog360.com/basic-ubuntu-commands-terminal-shortcuts-linux-beginner/
+
+System Monitoring:
+System Information: cat /proc/cpuinfo, lscpu
+Services Strted at Boot Time: service --status-all, initctl list
+"free"		ram being used
+"htop"		system monitoring utility
+"top" – Displays the processes using the most system resources at any given 
+"uname -a"	Provides a wide range of basic information about the system.
+"df"		(display filesystem) command displays information about the disk space usage of all mounted filesystems.
+
+System Maintenance:
+"free"							Displays the amount of free space available on the system.
+"sudo" 							(SuperUser DO) Linux command allows you to run programs or other commands with administrative privileges, just like “Run as administrator” in Windows
+"sudo apt-get update", "sudo apt-get upgrade"		updates the database and let your system know if there are newer packages available or not
+"sudo apt-get upgrade <package-name>"			only updates specific package
+"sudo apt-get install <package-name>"			install package by name alone
+
+Use with .deb files, dpkg section:
+https://www.wikihow.com/Install-DEB-Files
+
+"sudo apt-get remove <package-name>"			uninstall a package without dependencies
+"sudo apt-get purge <package-name>"			remove a software completely from your system with its configuration or data files so that no longer personalized settings will be available during reinstallation
+"apt-get autoremove" or "sudo apt-get autoremove" 	command is used to remove any unnecessary packages. Unnecessary means, whenever you install an application
+run "apt-get" 						autoremove as sudo after uninstalling a package to remove unwanted software dependencies.
+
+
+System Structure/Files:
+
+#use "ctrl + alt + t" to open terminal window from anywhere
+#you can open any application by typing it's name 
+
+    cd /  – Takes you to the root directory.
+    cd .. – Takes you up one directory level.
+    cd –  – Takes you to the previous directory.
+
+    cd: The cd command will allow you to change directories. When you open a terminal you will be in your home directory. To move around the file system you will use cd. Examples:
+
+    To navigate into the root directory, use "cd /"
+
+    To navigate to your home directory, use "cd" or "cd ~"
+
+    To navigate up one directory level, use "cd .."
+
+    To navigate to the previous directory (or back), use "cd -"
+
+    To navigate through multiple levels of directory at once, specify the full directory path that you want to go to. For example, use, "cd /var/www" to go directly to the /www subdirectory of /var/. As another example, "cd ~/Desktop" will move you to the Desktop subdirectory inside your home directory. 
+
+"ranger"	shows all system files in hierachial structure
+"ls" 		(list) command lists all files and folders in your current working directory. You can also specify paths to other directories if you want to view their contents.
+"pwd"		(print working directory) Ubuntu command displays the full pathname of the current working directory.
+"dpkg --list"	lists all the packages in machine
+"ncdu"		tells you which files are taking up the most space on computer
+"du" 		(directory usage) command displays the size of a directory and all of its subdirectories.
+"mkdir"		(make directory) command allows you to create a new directory. You can specify where you want the directory created – if you do not do so, it will be created in your current working directory.
+"mv"		(move) command allows you to move files. You can also rename files by moving them to the directory they are currently in, but under a new name. The usage is the same as cp – for example mv xyz /home/myfiles would move the file “xyz” to the directory “/home/myfiles”.
+"cp"		(copy) Linux command allows you to copy a file. You should specify both the file you want to be copied and the location you want it copied to – for example, cp xyz /home/myfiles would copy the file “xyz” to the directory “/home/myfiles”.
+
+
+Terminal Aids:
+"clear"		clears terminal
+"exit"		exit terminal
+"history"	command displays all of your previous commands up to the history limit.
+
+
+Special Commands:
+"passwd" lets you change the user's password from terminal: passwd <user>
+
+
+
+Ubuntu Terminal Shortcuts	Function:
+
+Ctrl + Shift + T		Open new tab on current terminal			
+Ctrl + Shift + W		Close the current tab
+Ctrl + Shift + W		Close the current tab
+Ctrl + A			Move cursor to beginning of line
+Ctrl + E			Move cursor to end of line
+Ctrl + U			Clears the entire current line
+Ctrl + K			Clears the command from the cursor right
+Ctrl + W			Delete the word before the cursor
+Ctrl + R			Allows you to search your history for commands matching what you have typed
+Ctrl + C			Kill the current process
+Ctrl + Z			Suspend the current process by sending the signal SIGSTOP
+Ctrl + L			Clears the terminal output
+Alt + F				Move forward one word
+Alt + B				Move backward one word
+Ctrl + Shift + C		Copy the highlighted command to the clipboard
+Ctrl + Shift + V 		Paste the contents of the clipboard
+Up/Down Arrow keys		To scroll through your command history, allowing you to quickly execute the same command multiple times
+TAB				Used to complete the command you are typing. If more than one command is possible, you can press it multiple times to scroll through the possible completions. 
+
+
+****************************************************************************************************************************************************************************************************************************
+
+Packages and their commands
+
+Free anime using mpv video player: https://github.com/pystardust/ani-cli
+#cd ~/ani-cli || ./ani-cli
+
+mocp = audio player
+#press "h" for list of all commands
+
+Hacker Time:
+hollywood, cmatrix
+
+
+****************************************************************************************************************************************************************************************************************************
+
+Use cat <fileName> to open files in terminal
+
+C:\Users\brand\.cache

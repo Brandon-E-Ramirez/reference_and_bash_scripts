@@ -1,0 +1,15 @@
+mod + d = open d menu
+ctrl + shift + e = log-out
+mod + shift + q = close program
+mod + v = next window will be inserted vertically
+mod + h = next window will be inserted horizontally
+mod + left, right, up, down = navigate
+mod + s = stacking mode
+mod + e = tilling mode
+mod + w =  tab mode
+mod + r = resize mode
+mod + shift + arrow = move current window
+mod + f = toggle fullscreen
+
+
+mod + 1/2/3 = change workspace focus
